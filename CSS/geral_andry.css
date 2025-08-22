@@ -1,5 +1,5 @@
 table{
-    border: 1px solid rgba(136, 38, 77, 0.773);
+    border: 1px solid rgba(234, 16, 212, 0.773);
     margin: auto;
     margin-top: 20px;
     width: 65%;
@@ -7,11 +7,14 @@ table{
     border-collapse: collapse;
 }
 th{
-    background-color: burlywood;
+    background-color: rgb(54, 209, 233);
 }
 tbody{
     text-align: center;
 }
 tr{
     height: 40px;
+}
+td{
+    background-color: blueviolet;
 }
