@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="CSS/geral_andry.css">
+        <link rel="stylesheet" href="estilos.css">
+
+    </head>
+
+    <body>
+        <div id="cuerpo">
+            <header id="encabezado">
+                
+            </header>
+
+                <nav id="menu2">
+                    <ul>
+                        <li><a href= "Index1.html"><img src="IMG/flecha.jpg" alt="" style="width: 50px;"></a></li>
+                    </ul>
+                </nav>
+        </div>
+
+<table border="2" style="background-color: white;">
+            <thead>
+                <tr>
+                    <th colspan="4">Diccionario de datos base de REPROPIG</th>
+                <tr>
+                    <td><b>Nombre</b></td>
+                    <td colspan="3">Porcinos</td>
+                <tr>
+                    <td><b>Creación</b></td>
+                    <td colspan="3">06/08/2025</td>
+                <tr>
+                    <td><b>Descripción</b></td>
+                    <td colspan="3">Registro de datos propios para los lechones de la unidad de porcinos en el centro agropecuario "La Granja"</td>
+                <tr>
+                    <th>Campo</th>
+                    <th>Tipo de dato</th>
+                    <th>Tamaño</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><b>Id</b></td>
+                    <td>INT</td>
+                    <td>10</td>
+                    <td>Número identificador para cada cerdo</td>
+                <tr>
+                    <td><b>Id_chapeta</b></td>
+                    <td>INT</td>
+                    <td>10</td>
+                    <td>Representa el número de chapeta con el que cada porcino es identificado</td>
+                <tr>
+                    <td><b>Nombre</b></td>
+                    <td>VARCHAR</td>
+                    <td>24</td>
+                    <td>Nombre con el cual se reconoce al porcino</td>
+                </tr>
+                    <td><b>Fecha de nacimiento</b></td>
+                    <td>DATE</td>
+                    <td>0</td>
+                    <td>Muestra la fecha exacta en la que ha nacido el porcino</td>
+                </tr>
+                    <td><b>Genero</b></td>
+                    <td>ENUM</td>
+                    <td>('F','M')</td>
+                    <td>Define el genero al cual pertenece el lechon</td>
+                </tr>
+                    <td><b>Raza</b></td>
+                    <td>VARCHAR</td>
+                    <td>50</td>
+                    <td>Define el tipo de raza a la que pertenece el lechon</td>
+                </tr>
+                    <td><b>Id_Madre</b></td>
+                    <td>INT</td>
+                    <td>11</td>
+                    <td>Identificador con el cual es reconocida la madre del porcino mencionado</td>
+                </tr>
+                <tr>
+                    <td><b>Id_Padre</b></td>
+                    <td>INT</td>
+                    <td>11</td>
+                    <td>Identificador con el cual es reconocido el padre del porcino mencionado</td>
+                </tr>
+            </tbody>
+</table>
+</body>
+</html>

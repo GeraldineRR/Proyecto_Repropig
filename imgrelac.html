@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visor de Imágenes Cool</title>
+    <link rel="stylesheet" href="CSS/Ent-Rel.css">
+</head>
+
+<body>
+
+    <h1>Modelo Entidad Relación</h1>
+
+    <!-- Imagen principal -->
+  
+<nav id="men"><ul><li><a href= "Index.html"><img src="IMG/flecha.jpg" alt="" style="width: 50px;"></a></li></ul></nav>
+    <img src="IMG/alejandra.jpg" alt="imagen_principal" id="alejandra">
+
+    <!-- Contador -->
+    <p id="contador">1 / 6</p>
+
+    <!-- Miniaturas -->
+    <div id="nav">
+        <button onclick="cambiarimagen(1)"><img src="IMG/alejandra.jpg" alt="" id="ale"></button>
+        <button onclick="cambiarimagen(2)"><img src="IMG/david.jpg" alt="" id="dav"></button>
+        <button onclick="cambiarimagen(3)"><img src="IMG/natalia.jpg" alt="" id="nata"></button>
+        <button onclick="cambiarimagen(4)"><img src="IMG/felipe.jpg" alt="" id="feli"></button>
+        <button onclick="cambiarimagen(5)"><img src="IMG/andry.jpg" alt="" id="and"></button>
+        <button onclick="cambiarimagen(6)"><img src="IMG/Modelo Entidad-Relación.png" alt="" id="geral"></button>
+    </div>
+
+    <!-- Botones de navegación -->
+    <div id="botons">
+        <button onclick="moverizquierda()" style="border: none;"><img src="IMG/left.png" id="left"></button>
+        <button onclick="moverderecha()" style="border: none;"><img src="IMG/rigth.png" id="right"></button>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

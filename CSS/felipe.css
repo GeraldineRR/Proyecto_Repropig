@@ -1,0 +1,17 @@
+th{
+    background-color: burlywood;
+}
+th{
+    border-color: black;
+}
+table{
+    border-color: black;
+    margin: auto;
+    border-collapse: collapse;
+    width: 65%;
+    margin-top: 20px;
+    font: 14px Arial, sans-serif; color: #000000;
+}
+table th, td{
+    padding: 10.5px 15px;
+}

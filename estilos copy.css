@@ -1,0 +1,46 @@
+html{
+    background-image: url('IMG/FONDO.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+#menu{
+    width: 40%;
+    text-align: center;
+    background: #f4ffcc;
+    padding: 6px 6px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+#menu li{
+    display: inline-block;
+    list-style: none;
+    padding: 6px;
+    font: bold 16px verdana, sans-serif;
+    border-radius: 10px;
+}
+#menu ul li:hover{
+    padding: 6px;
+    background-color: rgba(219, 247, 108, 0.423);
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+#men{
+    margin: auto;
+    width: 7%;
+    background: #ffffff;
+    padding: 6px 6px;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+#men li{
+    display: inline-block;
+    list-style: none;
+    font: bold 16px verdana, sans-serif;
+    border-radius: 10px;
+}

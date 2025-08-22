@@ -1,0 +1,12 @@
+th{background-color: burlywood;}
+
+table{border-color: rgb(190, 157, 113);
+     margin: auto;
+     border-collapse: collapse;
+     width: 65%;
+     margin-top: 20px;
+     font: 14px Arial, sans-serif; color: #000000;
+}
+table th, td{
+    padding: 10.5px 15px;
+}

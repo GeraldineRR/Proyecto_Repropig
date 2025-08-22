@@ -1,0 +1,17 @@
+table{
+    border: 1px solid rgba(136, 38, 77, 0.773);
+    margin: auto;
+    margin-top: 20px;
+    width: 65%;
+    font: 14px Arial, sans-serif; color: #000000;
+    border-collapse: collapse;
+}
+th{
+    background-color: burlywood;
+}
+tbody{
+    text-align: center;
+}
+tr{
+    height: 40px;
+}

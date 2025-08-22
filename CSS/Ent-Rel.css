@@ -1,0 +1,51 @@
+/* Fondo moderno */
+body {
+    background: linear-gradient(135deg, #144bb2, #039772);
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* Imagen principal con animación */
+#alejandra {
+    transition: opacity 0.4s ease-in-out;
+}
+
+/* Miniaturas con efecto hover */
+#nav img {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#nav img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(193, 35, 35, 0.6);
+}
+
+/* Contador */
+#contador {
+
+    font-size: 16px;
+    color: #FFD700;
+}
+#men{
+    margin: left;
+    width: 7%;
+    background: #ffffff;
+    padding: 1px 6px;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+#men li{
+    display: inline-block;
+    list-style: none;
+    font: bold 16px verdana, sans-serif;
+    border-radius: 10px;
+}

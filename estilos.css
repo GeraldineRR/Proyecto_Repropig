@@ -1,0 +1,52 @@
+html{
+    background-image: url('IMG/FONDO.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+#menu{
+    width: 40%;
+    text-align: center;
+    background: #52fff9;
+    padding: 6px 6px;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 25px;
+}
+#menu li{
+    display: inline-block;
+    list-style: none;
+    padding: 6px;
+    font: bold 16px verdana, sans-serif;
+    border-radius: 10px;
+}
+#menu ul li:hover{
+    padding: 6px;
+    background-color: rgba(10, 101, 101, 0.271);
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+#men li{
+    display: inline-block;
+    list-style: none;
+    font: bold 16px verdana, sans-serif;
+    border-radius: 10px;
+}
+#menu2{
+    width: 7%;
+    background: #ffffff;
+    padding: 6px 6px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+#menu2 li{
+    display: inline-block;
+    list-style: none;
+    font: bold 16px verdana, sans-serif;
+    border-radius: 10px;
+}
