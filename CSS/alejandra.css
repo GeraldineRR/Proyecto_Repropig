@@ -1,12 +1,16 @@
-th{background-color: burlywood;}
+th{background-color: rgb(54,209,233)}
 
-table{border-color: rgb(190, 157, 113);
+table{border-color: rgb(234, 16, 212, 0.773);
      margin: auto;
      border-collapse: collapse;
      width: 65%;
      margin-top: 20px;
-     font: 14px Arial, sans-serif; color: #000000;
+     font: 14px Arial, sans-serif; color: #0f0e0e;
 }
 table th, td{
     padding: 10.5px 15px;
+}
+td{
+    background-color: blueviolet;
+    font: 14px sans-serif; color: #f0eeee;
 }
