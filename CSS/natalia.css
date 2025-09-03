@@ -1,25 +1,24 @@
-th {
-  background-color: burlywood;
-  border-color: rgb(0, 0, 14);
+table {
+  border: 1px solid rgba(234, 16, 212, 0.773);
+  margin: auto;
+  margin-top: 20px;
+  width: 65%;
+  font: 14px Arial, sans-serif; color: #0c0c0c;
+  border-collapse: collapse;
+}
+th{
+  background-color:rgb(54,209, 233)
+}
+
+tbody {
+  text-align: center;
+}
+
+tr {
+  height: 40px;
 }
 
 td {
-  background-color: rgb(255, 255, 255);
-}
-
-table {
-    margin: auto;
-    border-collapse: collapse;
-    width: 65%;
-    margin-top: 20px;
-    font: 14px Arial, sans-serif; color: #000000;
-}
-
-body {
-  height: 70px;
-  text-align: center;
-
-}
-table th, td {
-  padding: 10.5px 1px;
+  background-color: blueviolet;
+  font: 14px sans-serif; color: #F0eeee;
 }
