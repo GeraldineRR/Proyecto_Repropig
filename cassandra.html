@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cassandra DB - CRUD</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <header>
+    <h1>Apache Cassandra</h1>
+    <p>Características y ejemplos de consultas CRUD</p>
+  </header>
+
+  <div class="container">
+    <h2>Características principales</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Escalabilidad</h3>
+        <p>Permite añadir nodos fácilmente sin afectar el rendimiento.</p>
+      </div>
+      <div class="card">
+        <h3>Alta disponibilidad</h3>
+        <p>No tiene punto único de falla, ideal para sistemas críticos.</p>
+      </div>
+      <div class="card">
+        <h3>Distribución</h3>
+        <p>Los datos se distribuyen entre múltiples nodos de manera eficiente.</p>
+      </div>
+      <div class="card">
+        <h3>Modelo NoSQL</h3>
+        <p>Usa un modelo orientado a columnas con su propio lenguaje CQL.</p>
+      </div>
+    </div>
+
+    <div class="crud">
+      <h2>Ejemplos CRUD en Cassandra (CQL)</h2>
+
+      <div class="crud-item">
+        <div class="crud-title">Crear (CREATE) <span>▶</span></div>
+        <div class="crud-content">
+          <pre>
+CREATE TABLE usuarios (
+  id UUID PRIMARY KEY,
+  nombre TEXT,
+  email TEXT
+);
+          </pre>
+        </div>
+      </div>
+
+      <div class="crud-item">
+        <div class="crud-title">Insertar (INSERT) <span>▶</span></div>
+        <div class="crud-content">
+          <pre>
+INSERT INTO usuarios (id, nombre, email) 
+VALUES (uuid(), 'Carlos Pérez', 'carlos@email.com');
+          </pre>
+        </div>
+      </div>
+
+      <div class="crud-item">
+        <div class="crud-title">Consultar (SELECT) <span>▶</span></div>
+        <div class="crud-content">
+          <pre>
+SELECT nombre, email FROM usuarios;
+          </pre>
+        </div>
+      </div>
+
+      <div class="crud-item">
+        <div class="crud-title">Actualizar (UPDATE) <span>▶</span></div>
+        <div class="crud-content">
+          <pre>
+UPDATE usuarios 
+SET email = 'nuevo@email.com' 
+WHERE id = 1234-5678-9012;
+          </pre>
+        </div>
+      </div>
+
+      <div class="crud-item">
+        <div class="crud-title">Eliminar (DELETE) <span>▶</span></div>
+        <div class="crud-content">
+          <pre>
+DELETE FROM usuarios 
+WHERE id = 1234-5678-9012;
+          </pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>💻 Página creada para mostrar características y consultas de Cassandra</p>
+  </footer>
+ <script src="JS/sc.js"></script>
+
+</body>
+</html>
