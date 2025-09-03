@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>PostgreSQL</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdeef4; 
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #f78fb3; 
+      color: white;
+      text-align: center;
+      padding: 20px;
+      border-bottom: 5px solid #f3a6c8;
+    }
+    header h1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px; 
+      margin: 0;
+    }
+    header img {
+      width: 50px; 
+      height: auto;
+    }
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #fff0f6; 
+      border-radius: 12px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    }
+    h2, h3 {
+      color: #b83280; 
+    }
+    ul {
+      background: #ffe4ec;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    code {
+      display: block;
+      background: #ffdde8;
+      color: #4a0e2e;
+      padding: 10px;
+      border-radius: 6px;
+      margin: 10px 0;
+      font-size: 14px;
+    }
+    footer {
+      text-align: center;
+      background: #f78fb3;
+      color: white;
+      padding: 10px;
+      margin-top: 20px;
+      border-top: 5px solid #f3a6c8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>
+      <img src="https://www.postgresql.org/media/img/about/press/elephant.png" alt="Logo PostgreSQL">
+      PostgreSQL
+    </h1>
+  </header>
+
+  <main>
+    <p>
+      PostgreSQL es una base de datos de objetos-relacional de código abierto, avanzada y de clase empresarial,
+      conocida por su robustez, integridad y fiabilidad. Es compatible con SQL y soporta la gestión de datos JSON,
+      y ofrece características como transacciones ACID, tipos de datos complejos y funciones avanzadas.
+    </p>
+
+    <h2>Características Clave</h2>
+    <ul>
+      <li><b>Código Abierto:</b> gratuita y con gran comunidad de desarrolladores.</li>
+      <li><b>Relacional de Objetos:</b> maneja objetos y datos relacionales.</li>
+      <li><b>Soporte ACID:</b> garantiza la integridad de los datos.</li>
+      <li><b>Compatibilidad:</b> soporta SQL y JSON.</li>
+      <li><b>Extensibilidad:</b> permite definir tipos y funciones propias.</li>
+      <li><b>Seguridad:</b> claves foráneas, vistas y control de acceso.</li>
+      <li><b>Alta Disponibilidad:</b> soporta múltiples conexiones.</li>
+      <li><b>Multiplataforma:</b> funciona en Linux, Windows y macOS.</li>
+    </ul>
+
+    <h2>Sentencias SQL CRUD</h2>
+
+    <h3>1. Crear (INSERT)</h3>
+    <code>
+INSERT INTO nombre_tabla (columna1, columna2, ...) <br>
+VALUES (valor1, valor2, ...);
+    </code>
+
+    <h3>2. Consultar (SELECT)</h3>
+    <code>
+SELECT columna1, columna2, ... <br>
+FROM nombre_tabla <br>
+WHERE condicion;
+    </code>
+
+    <h3>3. Actualizar (UPDATE)</h3>
+    <code>
+UPDATE nombre_tabla <br>
+SET columna1 = valor_nuevo1, columna2 = valor_nuevo2, ... <br>
+WHERE condicion;
+    </code>
+
+    <h3>4. Eliminar (DELETE)</h3>
+    <code>
+DELETE FROM nombre_tabla <br>
+WHERE condicion;
+    </code>
+  </main>
+
+  <footer>
+    <p> ANDRY RUBIANO PADILLA </p>
+  </footer>
+
+</body>
+</html>
