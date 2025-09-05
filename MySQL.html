@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Características de MySQL</title>
+    <link rel="stylesheet" href="MySQL.css">
+
+</head>
+<body>
+    
+    <h1>Características de MySQL</h1>
+
+    <ul>
+        <li><strong>Código abierto y gratuito:</strong> MySQL es software libre bajo la licencia GNU GPL, aunque también tiene versiones comerciales ofrecidas por Oracle.</li>
+        <li><strong>Basado en SQL:</strong> Utiliza el lenguaje estándar SQL (Structured Query Language) para gestionar y manipular bases de datos.</li>
+        <li><strong>Multiplataforma:</strong> Funciona en diversos sistemas operativos como Linux, Windows, macOS, y más.</li>
+        <li><strong>Alta velocidad y rendimiento:</strong> Optimizado para ofrecer un buen rendimiento, especialmente en consultas de lectura.</li>
+        <li><strong>Escalabilidad:</strong> Puede manejar desde pequeñas bases de datos personales hasta grandes sistemas con millones de registros.</li>
+        <li><strong>Soporte para múltiples motores de almacenamiento:</strong>
+            <ul>
+                <li>InnoDB (por defecto, con soporte para transacciones y claves foráneas).</li>
+                <li>MyISAM (más rápido para lecturas, pero sin soporte de transacciones).</li>
+                <li>Otros: MEMORY, CSV, ARCHIVE, etc.</li>
+            </ul>
+        </li>
+        <li><strong>Seguridad y control de acceso:</strong> Soporta autenticación de usuarios, privilegios por tabla/columna, y cifrado de conexiones (SSL).</li>
+        <li><strong>Transacciones:</strong> Compatible con transacciones ACID (si se usa InnoDB), lo que permite mayor integridad de los datos.</li>
+        <li><strong>Replicación:</strong> Soporta replicación maestro-esclavo y maestro-maestro, útil para balanceo de carga y respaldo.</li>
+        <li><strong>Integración con múltiples lenguajes:</strong> Compatible con muchos lenguajes de programación: PHP, Python, Java, C#, Perl, etc.</li>
+        <li><strong>Interfaces gráficas y herramientas:</strong> Herramientas como MySQL Workbench, phpMyAdmin, entre otras, facilitan la administración.</li>
+        <li><strong>Comunidad y documentación:</strong> Amplia comunidad de usuarios y una excelente documentación oficial.</li>
+    </ul>
+
+    <h2>Operaciones básicas en MySQL</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Operación</th>
+                <th>Descripción</th>
+                <th>Sentencia MySQL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>CREATE</strong></td>
+                <td>Inserta un documento en la colección</td>
+                <td><code>INSERT INTO nombre_tabla (columna1, columna2, ...)VALUES (valor1, valor2, ...);</code></td>
+            </tr>
+
+            <tr>
+                <td><strong>READ</strong></td>
+                <td>Busca documentos que coincidan con la condición</td>
+                <td><code>SELECT columna1, columna2 FROM nombre_tabla WHERE condición;</code></td>
+            </tr>
+
+            <tr>
+                <td><strong>UPDATE</strong></td>
+                <td>Actualiza un documento que cumple el filtro</td>
+                <td><code>UPDATE nombre_tabla SET columna1 = valor1, columna2 = valor2 WHERE condición;</code></td>
+            </tr>
+            <tr>
+                <td><strong>DELETE</strong></td>
+                <td>Elimina un documento que cumple la condición </td>
+                <td><code>DELETE FROM nombre_tabla WHERE condición;</code></td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

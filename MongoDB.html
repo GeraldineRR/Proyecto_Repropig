@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Características de MongoDB</title>
+    <link rel="stylesheet" href="MONGODB.css">
+
+</head>
+<body>
+    
+    <h1>Características de MongoDB</h1>
+
+    <ul>
+        <li><strong>Modelo de datos orientado a documentos: </strong>  Los datos se almacenan en documentos BSON (una extensión de JSON).<br>Cada documento puede tener una estructura diferente, lo que proporciona gran flexibilidad </li>
+        <li><strong>No requiere esquema fijo (schema-less): </strong>  Puedes guardar documentos con diferentes estructuras dentro de la misma colección. </li>
+        <li><strong>Escalabilidad horizontal:</strong> Soporta sharding, una técnica para distribuir datos entre múltiples servidores.
+        Esto permite escalar horizontalmente grandes volúmenes de datos</li>
+        <li><strong>Alta disponibilidad y replicación: </strong> Usa replica sets, que son grupos de servidores MongoDB que mantienen las mismas copias de datos.<br>
+        Si el nodo principal falla, otro toma su lugar automáticamente (failover)</li>
+        <li><strong>Consultas potentes: </strong> Permite realizar consultas complejas, incluyendo filtros, rangos, búsquedas de texto, agregaciones y más.<br>
+        Cuenta con el framework de agregación, una poderosa herramienta para procesar y transformar datos.</li>
+        <li><strong>Índices:</strong> Puedes crear índices en cualquier campo para acelerar las consultas.<br>
+        Soporta índices compuestos, geoespaciales, de texto, entre otros.</li>
+        <li><strong>Alto rendimiento: </strong>  Rápido en lectura y escritura, especialmente en cargas de trabajo no estructuradas o semi-estructuradas.<br>
+        Compatibilidad con múltiples lenguajes: Drivers oficiales para JavaScript (Node.js), Python, Java, C#, PHP, Ruby, Go, etc.</li>
+        <li><strong>Interfaz amigable: </strong> Ofrece herramientas como MongoDB Compass (interfaz gráfica) y la Mongo Shell para trabajar con la base de datos.</li>
+        <li><strong>Base de datos orientada a la nube:</strong> Tiene su servicio en la nube llamado MongoDB Atlas, que facilita la administración, escalado y monitoreo automático</li>
+    </ul>
+
+    <h2>Operaciones básicas en MongoDB</h2>
+
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Operación</th>
+                <th>Descripción</th>
+                <th>Sentencia MySQL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>CREATE</strong></td>
+                <td>Inserta un documento en la colección   </td>
+                <td><code>db.collection.insertOne({campo: valor})</code></td>
+            </tr>
+
+            <tr>
+                <td><strong>READ</strong></td>
+                <td>Busca documentos que coincidan con la condición</td>
+                <td><code>db.collection.find({campo: valor}) </code></td>
+            </tr>
+
+            <tr>
+                <td><strong>UPDATE</strong></td>
+                <td>Actualiza un documento que cumple el filtro</td>
+                <td><code>db.collection.updateOne({filtro}, {$set: {campo: nuevo_valor}})</code></td>
+            </tr>
+            <tr>
+                <td><strong>DELETE</strong></td>
+                <td>Elimina un documento que cumple la condición </td>
+                <td><code>db.collection.deleteOne({campo: valor})</code></td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
