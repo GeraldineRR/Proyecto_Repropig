@@ -16,6 +16,14 @@ header {
 h1 {
     margin: 0;
 }
+#men {
+       margin: left;
+       width: 7%;
+       background: #ffffff;
+       padding: 6px 6px;
+       margin-top: 10px;
+       border-radius: 25px;
+   }
 
 .container {
     width: 90%;
