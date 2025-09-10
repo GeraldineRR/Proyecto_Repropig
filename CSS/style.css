@@ -25,6 +25,15 @@
        font-size: 1.2rem;
    }
 
+   #men {
+       margin: left;
+       width: 7%;
+       background: #ffffff;
+       padding: 6px 6px;
+       margin-top: 10px;
+       border-radius: 25px;
+   }
+
    /* Sección características */
    .container {
        width: 90%;
