@@ -36,10 +36,10 @@ h1 {
     color: #FFD700;
 }
 #men{
-    margin: left;
+    margin: auto;
     width: 7%;
     background: #ffffff;
-    padding: 1px 6px;
+    padding: 6px 6px;
     margin-top: 20px;
     border-radius: 25px;
 }
