@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neo4j - Base de Datos de Grafos</title>
+<link rel="stylesheet" href="CSS/styl.css">
+</head>
+<body>
+  <header>
+    <h1>Neo4j - Base de Datos de Grafos</h1>
+    <p>Características y ejemplos básicos en Cypher</p>
+  </header>
+
+  <div class="container">
+
+    <div class="card">
+      <h2>🔑 Características principales</h2>
+      <ul>
+        <li>Modelo basado en nodos, relaciones y propiedades.</li>
+        <li>Lenguaje de consulta <b>Cypher</b>.</li>
+        <li>Óptimo para recorrer relaciones.</li>
+        <li>Transacciones ACID.</li>
+        <li>Visualización de grafos con Neo4j Browser y Bloom.</li>
+        <li>Casos de uso: redes sociales, recomendaciones, logística, fraude, biología.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>📌 Ejemplos en Cypher</h2>
+      <p>Pulsa un botón para ver el código:</p>
+      <button onclick="mostrarEjemplo('crear')">Crear Nodo</button>
+      <button onclick="mostrarEjemplo('consultar')">Consultar</button>
+      <button onclick="mostrarEjemplo('actualizar')">Actualizar</button>
+      <button onclick="mostrarEjemplo('eliminar')">Eliminar</button>
+
+      <pre id="codigo">
+// Selecciona una opción para ver el ejemplo
+      </pre>
+    </div>
+  </div>
+
+ <script src="JS/js.js"></script>
+</body>
+</html>
