@@ -3,18 +3,16 @@ table{
     margin: auto;
     margin-top: 20px;
     width: 65%;
-    font: 14px Arial, sans-serif; color: #000000;
     border-collapse: collapse;
 }
 th{
     background-color: rgb(54, 209, 233);
-}
-tbody{
-    text-align: center;
+    font: 14px Arial, sans-serif; color: #000000;
 }
 tr{
     height: 40px;
 }
 td{
     background-color: blueviolet;
+    font: 14px Arial, sans-serif; color: #ffffff;
 }

@@ -28,7 +28,7 @@
   <thead>
       <tr>
         <th>Nombre de la tabla</th>
-        <td colspan="3">MORTALIDAD </td>
+        <td colspan="3">Mortalidad</td>
       <tr>
         <th>Creacion</th>
         <td colspan="3">27/03/2025</td>
@@ -47,40 +47,40 @@
   </thead>
   <tbody>
      <tr>
-      <td>ID MORTALIDAD</td>
+      <td>Id_Mortalidad</td>
       <td>INT</td>
-      <td>5</td>
-      <td>IDENTIFICACION DE LA MORTALIDAD</td>
+      <td>11</td>
+      <td>Identificación de la mortalidad</td>
     <tr>
-      <td>ID PORCINO</td>
+      <td>Id_Porcino</td>
       <td>INT</td>
-      <td>5</td>
-      <td>IDENTIFICACION DE CERDO</td>
+      <td>11</td>
+      <td>Identificación de porcino</td>
     <tr>
-      <td>TIPO MORTALIDAD</td>
-      <td>VARCHAR</td>
-      <td>20</td>
-      <td>REPRESENTA EL TIPO DE MORTALIDAD DEL CERDO (ENFERMEDAD, EDAD, NACIDO MOMIA)</td>
+      <td>Tipo_Mortalidad</td>
+      <td>ENUM</td>
+      <td>('Edad','Enfermedad')</td>
+      <td>Representa el tipo de mortalidad del cerdo</td>
     <tr>
-      <td>SACRIFICADO</td>
-      <td>VARCHAR</td>
-      <td>2</td>
-      <td>DESCRIPCION DE SI O NO FUE SACRIFICADOS</td>
+      <td>Sacrificado</td>
+      <td>ENUM</td>
+      <td>('Si','No')</td>
+      <td>Indica si el porcino fue sacrificado o no</td>
     <tr>
-      <td>FECHA</td>
+      <td>Fecha</td>
       <td>DATE</td>
-      <td>2</td>
-      <td>DESCRIPCION DE LA FECHA DE MORTALIDAD</td>
+      <td>0</td>
+      <td>Fecha de mortalidad</td>
     <tr>
-      <td>HORA</td>
+      <td>Hora</td>
       <td>TIME</td>
-      <td>2</td>
-      <td>DESCRIPCION DE LA HORA DE MORTALIDAD</td>
+      <td>0</td>
+      <td>Hora de mortalidad</td>
     <tr>
-      <td>ID RESPONSABLE</td>
+      <td>Id_Responsable</td>
       <td>INT</td>
       <td>5</td>
-      <td>IDENTIFICACION DEL RESPONSABLE DEL SACRIFICIO</td>
+      <td>Identificación del responsable del sacrificio</td>
 
     
   </tbody>
