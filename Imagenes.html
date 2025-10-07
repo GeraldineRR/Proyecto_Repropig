@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/imagenstilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </head>
 
     <body>
@@ -22,52 +24,52 @@
         <div class="contenedor">
 
             <div class="estilo">
-                <img src="IMG/bienvenida.png" alt="">
+                <img src="IMG/bienvenida.png" alt="" onclick="cambiar(1)">
                 <p>Pantalla principal</p>
              </div>
 
             <div class="estilo">
-                <img src="IMG/servicios.png" alt="">
+                <img src="IMG/servicios.png" alt="" onclick="cambiar(2)">
                 <p>Servicios</p>
             </div>
 
             <div class="estilo">
-                <img src="IMG/registro.png" alt="">
+                <img src="IMG/registro.png" alt="" onclick="cambiar(3)">
                 <p>Registro de usuario</p>
             </div>
 
             <div class="estilo">
-                <img src="IMG/inisesion.png" alt="">
+                <img src="IMG/inisesion.png" alt="" onclick="cambiar(4)">
                 <p>Inicio de sesión</p>
             </div>
 
             <div class="estilo">
-                <img src="IMG/inicio.png" alt="">
+                <img src="IMG/inicio.png" alt="" onclick="cambiar(5)">
                 <p>Pantalla de inicio</p>
             </div>
 
             <div class="estilo">
-                <img src="IMG/porcino.png" alt="">
+                <img src="IMG/porcino.png" alt="" onclick="cambiar(6)">
                 <p>Registro de porcinos</p>
             </div>
 
             <div class="estilo">
-                <img src="IMG/consulta.png" alt="">
+                <img src="IMG/consulta.png" alt="" onclick="cambiar(7)">
                 <p>Consulta de registro</p>
             </div>
 
             <div class="estilo">
-                <img src="IMG/partos.png" alt="">
+                <img src="IMG/partos.png" alt="" onclick="cambiar(8)">
                 <p>Registro de partos</p>
             </div>
 
             <div class="estilo">
-                <img src="IMG/consulpartos.png" alt="">
+                <img src="IMG/consulpartos.png" alt="" onclick="cambiar(9)>
                 <p>Consulta de registro partos</p>
             </div>
 
             <div class="estilo">
-                <img src="IMG/montas.png" alt="">
+                <img src="IMG/montas.png" alt="" onclick="cambiar(10)>
                 <p>Registro de montas</p>
             </div>
             
@@ -91,5 +93,19 @@
                 <p>Registro de corrales</p>
             </div>
         </div>
+</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+      </div>
+      <div class="modal-body">
+        <img id="Imagen" src="" class=""img-fluid w-100" alt="Imagen grande" onclick="cambiar(1)">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="imagengrande.js"></script>
     </body>
 </html>
