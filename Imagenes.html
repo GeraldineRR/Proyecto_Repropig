@@ -22,90 +22,93 @@
         </header>
 
         <div class="contenedor">
-
             <div class="estilo">
-                <img src="IMG/bienvenida.png" alt="" onclick="cambiar(1)">
+                <img src="IMG/bienvenida.png" alt="" onclick="mostrarModal('IMG/bienvenida.png', 'Pantalla principal')">
                 <p>Pantalla principal</p>
              </div>
 
             <div class="estilo">
-                <img src="IMG/servicios.png" alt="" onclick="cambiar(2)">
+                <img src="IMG/servicios.png" alt="" onclick="mostrarModal('IMG/servicios.png', 'Servicios')">
                 <p>Servicios</p>
             </div>
 
             <div class="estilo">
-                <img src="IMG/registro.png" alt="" onclick="cambiar(3)">
+                <img src="IMG/registro.png" alt="" onclick="mostrarModal('IMG/registro.png', 'Registro de usuario')">
                 <p>Registro de usuario</p>
             </div>
 
             <div class="estilo">
-                <img src="IMG/inisesion.png" alt="" onclick="cambiar(4)">
+                <img src="IMG/inisesion.png" alt="" onclick="mostrarModal('IMG/inisesion.png', 'Inicio de sesión')">
                 <p>Inicio de sesión</p>
             </div>
 
             <div class="estilo">
-                <img src="IMG/inicio.png" alt="" onclick="cambiar(5)">
+                <img src="IMG/inicio.png" alt="" onclick="mostrarModal('IMG/inicio.png', 'Pantalla de inicio')">
                 <p>Pantalla de inicio</p>
             </div>
 
             <div class="estilo">
-                <img src="IMG/porcino.png" alt="" onclick="cambiar(6)">
+                <img src="IMG/porcino.png" alt="" onclick="mostrarModal('IMG/porcino.png', 'Registro de porcinos')">
                 <p>Registro de porcinos</p>
             </div>
 
             <div class="estilo">
-                <img src="IMG/consulta.png" alt="" onclick="cambiar(7)">
+                <img src="IMG/consulta.png" alt="" onclick="mostrarModal('IMG/consulta.png', 'Consulta de registro')">
                 <p>Consulta de registro</p>
             </div>
 
             <div class="estilo">
-                <img src="IMG/partos.png" alt="" onclick="cambiar(8)">
+                <img src="IMG/reproducciones.jpg" alt="" onclick="mostrarModal('IMG/reproducciones.jpg', 'Registro de reproducciones')">
+                <p>Registro para reproducciones</p>
+            </div>
+            
+            <div class="estilo">
+                <img src="IMG/partos.jpg" alt="" onclick="mostrarModal('IMG/partos.jpg', 'Registro de partos')">
                 <p>Registro de partos</p>
             </div>
 
             <div class="estilo">
-                <img src="IMG/consulpartos.png" alt="" onclick="cambiar(9)>
-                <p>Consulta de registro partos</p>
+                <img src="IMG/nacimientos.jpg" alt="" onclick="mostrarModal('IMG/nacimientos.jpg', 'Registro de nacimientos')">
+                <p>Registro de nacimientos</p>
             </div>
 
             <div class="estilo">
-                <img src="IMG/montas.png" alt="" onclick="cambiar(10)>
-                <p>Registro de montas</p>
-            </div>
-            
-            <div class="estilo">
-                <img src="IMG/inseminaciones.png" alt="">
-                <p>Registro de inseminaciones</p>
-            </div>
-
-            <div class="estilo">
-                <img src="IMG/mortalidad.png" alt="">
+                <img src="IMG/mortalidad.png" alt="" onclick="mostrarModal('IMG/mortalidad.png', 'Registro de mortalidad')">
                 <p>Registro de mortalidad</p>
             </div>
 
             <div class="estilo">
-                <img src="IMG/responsables.png" alt="">
+                <img src="IMG/responsables.png" alt="" onclick="mostrarModal('IMG/responsables.png', 'Registro de responsables')">
                 <p>Registro de responsables</p>
             </div>
+        </div>
 
-            <div class="estilo">
-                <img src="IMG/corrales.png" alt="">
-                <p>Registro de corrales</p>
+
+        <div class="modal fade" id="imgModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle">Título de la imagen</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body d-flex justify-content-center align-items-center">
+                <img id="modalImage" src="" alt="Imagen ampliada" style="max-width: 100%; max-height: 500px;">
+            </div>
             </div>
         </div>
-</button>
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-      </div>
-      <div class="modal-body">
-        <img id="Imagen" src="" class=""img-fluid w-100" alt="Imagen grande" onclick="cambiar(1)">
-      </div>
-    </div>
-  </div>
-</div>
+        </div>
 
-<script src="imagengrande.js"></script>
+        <script>
+        function mostrarModal(imagenSrc, titulo) {
+            document.getElementById('modalImage').src = imagenSrc;
+            document.getElementById('modalTitle').textContent = titulo;
+            var modal = new bootstrap.Modal(document.getElementById('imgModal'));
+            modal.show();
+        }
+        </script>
+
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

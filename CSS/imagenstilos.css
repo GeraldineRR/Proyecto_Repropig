@@ -17,10 +17,11 @@ header {
 }
         
 .contenedor {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 55px;
+    padding: 40px;
     margin: auto;
 }
         
